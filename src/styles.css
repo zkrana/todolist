@@ -1,0 +1,130 @@
+.app-wrapper {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.app {
+  width: 600px;
+  height: fit-content;
+  padding: 15px 25px;
+  border-radius: 4px;
+  background-color: rgb(24, 49, 83);
+}
+.input-box {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.add {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: darkgrey;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  position: relative;
+}
+h1::before {
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: tomato;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+input {
+  width: 50%;
+  height: 36px;
+  border-radius: 4px;
+  border: unset;
+  background-color: whitesmoke;
+  color: black;
+  padding-left: 15px;
+  font-size: 18px;
+}
+input:focus {
+  outline: none;
+}
+table {
+  margin-top: 25px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  padding: 0 7px;
+}
+tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 20px;
+}
+tr td {
+  width: 33%;
+  font-size: 18px;
+  color: rgb(24, 49, 83);
+  padding-bottom: 15px;
+  border-bottom: 0.5px solid grey;
+}
+tr td:first-child {
+  width: 60%;
+}
+tr td:nth-child(2) {
+  text-align: center;
+}
+tr td:nth-child(3) {
+  text-align: right;
+}
+
+.delicon {
+  color: tomato;
+  cursor: pointer;
+}
+.delicon:hover {
+  color: yellow;
+}
+.react-time-picker__wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 38px;
+  border-radius: 4px;
+  color: whitesmoke;
+}
+.react-time-picker__inputGroup__input.react-time-picker__inputGroup__hour,
+.react-time-picker__inputGroup__input.react-time-picker__inputGroup__minute,
+.react-time-picker__inputGroup__input.react-time-picker__inputGroup__amPm {
+  color: white;
+  font-size: 16px;
+  width: 50px !Important;
+  color: black;
+  height: 38px;
+}
+/* Add this to your styles.css */
+.list-item {
+  transition: all 0.3s ease;
+  opacity: 0; /* Start with opacity 0 */
+  transform: translateY(-10px); /* Start with a slight upward translation */
+}
+
+.list-item-entered {
+  opacity: 1; /* When the item is entered, set opacity to 1 */
+  transform: translateY(0); /* Reset the translation */
+}
